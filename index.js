@@ -12,7 +12,7 @@ const userRouter = require('./routes/user');
 
 // init
 const app = express();
-const port = process.env.PORT ;
+const port = process.env.PORT || 3000;
 const DB = process.env.DB;
 
 // middleware
