@@ -12,7 +12,7 @@ const userRouter = require('./routes/user');
 
 // init
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.PORT ;
 const DB = process.env.DB;
 
 // middleware
@@ -22,7 +22,6 @@ app.use(adminRouter);
 app.use(productRouter);
 app.use(userRouter);
 
-console.log(process.env);
 
 //connections
 mongoose.connect(DB).then(()=>{
